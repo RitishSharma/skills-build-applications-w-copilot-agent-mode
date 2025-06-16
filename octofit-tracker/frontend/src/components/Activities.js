@@ -4,7 +4,7 @@ function Activities() {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    fetch('https://miniature-pancake-9jrw7p7g7w53p7-8000.app.github.dev/api/activity/')
+    fetch('https://miniature-pancake-9jrw7p7g7w53p7-8000.app.github.dev/api/activity/') // DRF endpoint with trailing slash
       .then(res => res.json())
       .then(data => setActivities(data));
   }, []);
